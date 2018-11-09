@@ -1,0 +1,7 @@
+.idea
+node
+node_modules
+target
+*.iml
+src/main/webapp/app
+*.log
