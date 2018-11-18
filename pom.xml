@@ -8,15 +8,15 @@
     </parent>
 
     <groupId>br.com.touchhealth</groupId>
-    <artifactId>app-sample</artifactId>
+    <artifactId>react-app-sample</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
 	<description>Exemplo de aplicação Java Maven + Spring Boot + React Yarn</description>
 
     <properties>
         <groovy_version>2.4.15</groovy_version>
-        <node_version>v11.0.0</node_version>
-        <yarn_version>v1.10.1</yarn_version>
+        <node_version>v11.2.0</node_version>
+        <yarn_version>v1.12.3</yarn_version>
     </properties>
 
     <!-- Add typical dependencies for a web application -->
@@ -27,19 +27,30 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
             <classifier>indy</classifier>
             <version>${groovy_version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.196</version>
+        </dependency>
+
     </dependencies>
 
     <!-- Package as an executable jar -->
     <build>
-        <finalName>app-sample</finalName>
+        <finalName>react-app-sample</finalName>
         <resources>
             <resource>
                 <directory>${basedir}/src/main/resources</directory>

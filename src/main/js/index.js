@@ -10,7 +10,7 @@ import Theme from '@touchhealth/react-components-sample/Theme'
 import Tab from '@touchhealth/react-components-sample/TabThemed'
 
 ReactDOM.render(
-<Theme theme={{primaryColor: 'red'}}>
+<Theme theme={{primaryColor: 'steelblue'}}>
     <div style={{padding: '20px'}}>
         <Logo width={150} height={40}></Logo>
         <h1>Teste da App React</h1>

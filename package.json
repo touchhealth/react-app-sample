@@ -25,17 +25,20 @@
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^4.0.0-beta.3",
+    "html-webpack-plugin": "^3.0.0",
     "react-svg-loader": "^2.1.0",
     "rimraf": "^2.6.2",
     "style-loader": "^0.23.1",
     "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.4"
   },
   "scripts": {
     "clean": "rimraf src/main/webapp/app && rimraf target/app-sample/app",
     "cleanall": "yarn clean && rimraf node_modules && rimraf node",
     "build": "yarn clean && webpack -p --progress",
-    "dev": "yarn clean && webpack --watch --progress"
+    "dev": "yarn clean && webpack --watch --progress",
+    "server": "yarn clean && webpack-dev-server --config webpack.dev.js"
   }
 }
